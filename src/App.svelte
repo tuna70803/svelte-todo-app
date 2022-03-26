@@ -7,18 +7,17 @@
 </script>
 
 <style lang="scss">
-  .app {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 auto;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
-  .app::after {
+  &::after {
     content: "";
     background: url('../images/background.jpg');
     background-size: cover;
@@ -30,4 +29,5 @@
     bottom: 0;
     z-index: -1;
   }
+}
 </style>
