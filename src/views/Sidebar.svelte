@@ -1,4 +1,10 @@
-<aside class="sidebar"></aside>
+<aside class="sidebar">
+  <Folders />
+</aside>
+
+<script lang="ts">
+  import Folders from './Folders.svelte';
+</script>
 
 <style lang="scss">
 .sidebar {
