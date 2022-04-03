@@ -15,7 +15,7 @@
   import FolderIcon from './FolderIcon.svelte';
 
   export let index = 0;
-  export let id = 0;
+  export let id = '';
   export let name = '';
   export let count = 0;
 
@@ -26,6 +26,7 @@
 <style lang="scss">
 .folder-item {
   height: 40px;
+  min-height: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;

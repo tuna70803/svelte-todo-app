@@ -1,30 +1,18 @@
 <section class="folders">
-  {#each testFolders as folder, index (folder.id) }
+  {#each $folders as folder, index (folder.id) }
     <FolderItem
       index={index}
       id={folder.id}
       name={folder.name}
-      count={folder.count}
+      count={0}
       on:clicked={onFolderClick}
     />
   {/each}
 </section>
 
 <script lang="ts">
+  import { folders } from '../stores/folders';
   import FolderItem from './FolderItem.svelte';
-
-  const testFolders = [
-    {
-      id: 1,
-      name: 'item-1',
-      count: 5
-    },
-    {
-      id: 2,
-      name: 'item-2',
-      count: 10
-    }
-  ];
 
   const onFolderClick = (event) => {
     console.log('onClick Folder! id: ', event.detail.id);

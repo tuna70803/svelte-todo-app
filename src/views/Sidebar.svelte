@@ -1,9 +1,11 @@
 <aside class="sidebar">
   <Folders />
+  <NewFolder />
 </aside>
 
 <script lang="ts">
   import Folders from './Folders.svelte';
+  import NewFolder from './NewFolder.svelte';
 </script>
 
 <style lang="scss">
